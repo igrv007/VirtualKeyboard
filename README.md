@@ -23,16 +23,17 @@ virtualkeyboard.exe
 
 DESIGN & IMPLEMAINTAION DETAILS:
   
-  This application uses Model-View design pattern.It mainly contains 3 parts:
+  This application uses Model-View design pattern and polymorphism.It mainly contains 3 parts:
     
     1.Entry point for application (virtualkeyboard.cpp)
-    2.Model (VKeyboard class)
-    3.View  (Input class)
+    2.Model (VKeyboard class + Input class )
+    3.View  (InputView class)
 
-Entry point instantiates the view i.e Input class, which internally instantiates model i.e VKeyboard class.
-Standard thread library is used to create thread which runs model.
-Input class's Process() method internally invokes VKeyboard class's HandleInputEvents() method which handles all key presses.
+Entry point instantiates the view i.e InputView class, which internally instantiates model i.e VKeyboard class through Input class pointer using polymorphism.
+Standard thread library is used to create thread which runs View & Model.
+InputView class's Start() method internally invokes VKeyboard class's ProcessEvents() method which handles all key presses.
 
 
-![vkeyboard](https://user-images.githubusercontent.com/70363556/113504499-18c19d00-9556-11eb-807e-1ca908953a5a.PNG)
+![vkeyboard_new](https://user-images.githubusercontent.com/70363556/113506106-6cd17f00-9560-11eb-9dc6-b56c7d5247b6.png)
+
 
