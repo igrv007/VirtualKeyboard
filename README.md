@@ -19,6 +19,12 @@ RUN:
 
 virtualkeyboard.exe
 
+OUTPUT:
+
+cmd>virtualkeyboard.exe
+Virtual Keyboard session has started...
+Hello World                                  //terminal remains blank as user types(eg.User types "Hello World") & hits enter key, "Hello World" displayed.
+Ending Virtual Keyboard session...           //user presess ctrl+q
 
 
 DESIGN & IMPLEMAINTAION DETAILS:
