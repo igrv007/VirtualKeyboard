@@ -2,7 +2,7 @@
 
 This repo contains implementation of console based virtual keyboard.
 It takes input on terminal from user in non-echo mode and displays it after user hits enter key.
-CTRL+q quits the application.
+CTRL+q quits the application.This application is Windows based specifically.
 
 PRE-REQUISITE:
 
