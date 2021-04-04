@@ -7,9 +7,7 @@ void Start(){
 }
 
 int main(){
-	//std::unique_ptr<Keyboard> p_kb(new Keyboard<std::stiring>());
     thread vk(Start);
 	vk.join();
-	//p_kb->DisplayCurrLine();
 	return (0);
 }
