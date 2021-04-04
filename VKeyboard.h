@@ -7,15 +7,15 @@
 #include <memory>
 #include <conio.h>
 #include <thread>
-
+#include "Input.h"
 
 
 template <typename T>
-class VKeyboard{
+class VKeyboard : public Input<T>{
 public:
 	VKeyboard();
 	~VKeyboard();
-	void HandleInputEvents();
+	void ProcessEvents();
 
 private:
 	void DisableEchoMode() const;

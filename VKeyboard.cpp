@@ -13,7 +13,7 @@ void VKeyboard<T>::DisableEchoMode() const{
 }
 
 template<typename T>
-void VKeyboard<T>::HandleInputEvents() {
+void VKeyboard<T>::ProcessEvents() {
 	int ch;
 	bool bDone = true;
 	while(bDone){
