@@ -10,6 +10,9 @@
 #include "Input.h"
 
 
+
+//This class acts as Model part.
+//It handles all the backend for handling all key events.
 template <typename T>
 class VKeyboard : public Input<T>{
 public:
@@ -27,6 +30,9 @@ private:
 
 
 	T m_curr_line;
+
+	//These are the virtual key codes for 
+	//enter & ctrl+q keys
 	enum {
 		KEY_ENTER = 13,
 		CTRL_Q    = 17

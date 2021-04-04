@@ -15,7 +15,7 @@ void VKeyboard<T>::DisableEchoMode() const{
 template<typename T>
 void VKeyboard<T>::ProcessEvents() {
 	int ch;
-	bool bDone = true;
+	bool bDone = true;            //This is a flag varible.
 	while(bDone){
 		ch = getch();
 

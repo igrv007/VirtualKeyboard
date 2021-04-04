@@ -1,6 +1,8 @@
 #ifndef INPUT_H
 #define INPUT_H
 
+//This is a Base class for
+//all input devices in this application
 template <typename T>
 class Input{
 public:

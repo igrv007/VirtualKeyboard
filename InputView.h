@@ -2,6 +2,10 @@
 #define INPUTVIEW_H
 
 #include "VKeyboard.h"
+
+
+//This class acts as View.
+//It instantiates Model part accordingly.
 template <typename T>
 class InputView{
 public:
